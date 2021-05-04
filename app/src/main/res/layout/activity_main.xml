@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    tools:context = ".MainActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width = "match_parent"
+        android:layout_alignParentTop="true"
+        android:background="#061C97"
+        android:layout_height = "wrap_content">
+
+
+
+
+
+
+
+    <include
+        layout = "@layout/noti_accept"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content" />
+
+     </androidx.appcompat.widget.Toolbar>
+
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_below="@+id/toolbar"
+    android:layout_width = "match_parent"
+        android:layout_above="@+id/nav_bar"
+    android:layout_height = "match_parent" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+    android:layout_width = "match_parent"
+        android:id="@+id/nav_bar"
+    android:layout_alignParentBottom="true"
+        app:menu="@menu/menu_navbar"
+        android:background="#061C97"
+        app:itemTextColor="#fff"
+    android:layout_height = "wrap_content" />
+    </RelativeLayout>

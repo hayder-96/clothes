@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:layout_width = "match_parent"
+    android:orientation="vertical"
+    android:layout_height = "match_parent"
+    tools:context = ".MenuBascket">
+
+
+  <TextView
+      android:id = "@+id/textView_bascket"
+      android:layout_width = "match_parent"
+      android:gravity="center"
+      android:textColor="#D60404"
+      android:textSize="20sp"
+      android:layout_height = "match_parent"
+      android:text = "السلة فارغة" /><LinearLayout
+      android:id="@+id/laylay"
+      android:layout_width = "match_parent"
+      android:layout_height = "match_parent"
+ android:visibility="gone"
+      android:orientation = "vertical">
+
+      <TextView
+                android:id = "@+id/textView3"
+                android:layout_width = "match_parent"
+                android:layout_height = "wrap_content"
+          android:gravity="center"
+          android:textSize="20sp"
+          android:textColor="#000"
+                android:text = "ادخل المعلومات" /><View
+      android:id = "@+id/view8"
+      android:layout_width = "match_parent"
+      android:layout_height = "30dp" /><EditText
+                android:id = "@+id/done_name"
+                android:layout_width = "match_parent"
+      android:hint="الاسم الثلاثي"
+      android:gravity="center"
+      android:textColor="#000"
+                android:layout_height = "wrap_content"
+                android:ems = "10"
+                /><View
+      android:id = "@+id/view9"
+      android:layout_width = "match_parent"
+      android:layout_height = "30dp" /><EditText
+      android:id = "@+id/done_phone"
+      android:layout_width = "match_parent"
+      android:gravity="center"
+      android:textColor="#000"
+      android:hint="رقم الهاتف"
+      android:layout_height = "wrap_content"
+      android:ems = "10"
+    />
+      <View
+      android:id = "@+id/view10"
+      android:layout_width = "match_parent"
+      android:layout_height = "30dp" /><EditText
+      android:id = "@+id/done_addres"
+      android:layout_width = "match_parent"
+      android:gravity="center"
+      android:textColor="#000"
+      android:hint="العنوان"
+      android:layout_height = "wrap_content"
+      android:ems = "10"
+   /><View
+      android:id = "@+id/view11"
+      android:layout_width = "match_parent"
+      android:layout_height = "30dp" /><Button
+      android:id = "@+id/but_finish"
+
+      android:layout_width = "match_parent"
+      android:layout_height = "wrap_content"
+      android:text = "شراء"
+      android:textSize = "18sp" />
+  </LinearLayout><RelativeLayout
+      android:layout_width = "match_parent"
+      android:layout_height = "match_parent">
+
+
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/recy_bascket"
+      android:layout_width = "match_parent"
+      android:layout_height = "match_parent"
+      android:layout_above="@+id/but_pay"
+      app:layout_constraintBottom_toBottomOf = "parent"
+      app:layout_constraintEnd_toEndOf = "parent"
+      app:layout_constraintHorizontal_bias = "0.0"
+      app:layout_constraintStart_toStartOf = "parent"
+      app:layout_constraintTop_toTopOf = "parent" />
+    <Button
+    android:id = "@+id/but_pay"
+    android:layout_width = "match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_height = "wrap_content"
+    android:text = "شراء" />
+
+    </RelativeLayout>
+</LinearLayout>
